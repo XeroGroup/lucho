@@ -1,0 +1,49 @@
+button{
+    border-radius: 20px;
+}
+
+
+.brands{
+    background-color: #9647a7; 
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 75px;
+}
+
+.card-body-brands{
+    padding: 5px 5px 5px 5px;
+    color: #9647a7;
+
+}
+
+.card-text{
+    color: #9647a7;
+    visibility: hidden;
+}
+
+.bill-table{
+    background-color: #efac18;
+    border-radius: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.bill-table-header{
+    background-color: #bf881b;
+}
+
+.modal-content{
+    background-color: transparent;
+    border:none;
+}
+
+.lucho-panel{
+    background: white;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+}
+
+.lucho-panel > button {
+    border-radius: 20px;
+}
+

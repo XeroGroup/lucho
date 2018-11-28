@@ -1,4 +1,53 @@
+@font-face {
+    font-family: 'nexa'; /*a name to be used later*/
+    src: url('./fonts/nexa_bold.ttf'); /*URL to font*/
+}
+
+html, body {
+    font-family: 'nexa';
+}
+
+.row-nav{
+    background-color: #d19219;
+    color: white;
+    margin-bottom: -5px;
+}
+
+.row-nav > nav a {
+    color: white;
+}
+
+#body{
+    background: url('../img/background-arriba.png');
+    background-size:100%; 
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+#scene{
+    background: url('../img/background-abajo.png');
+    background-size: 100%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.buttons-group{
+    background-color:rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 59px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 59px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 59px -7px rgba(0,0,0,0.75);
+}
+
+.list-group-item:hover{
+    background-color: #f8f9fa;
+}
+
+
 button{
+    border: none;
     border-radius: 20px;
 }
 
@@ -8,6 +57,7 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     max-height: 75px;
+    border-radius: 15px;
 }
 
 .card-body-brands{
@@ -26,6 +76,7 @@ button{
     border-radius: 30px;
     padding-left: 0px;
     padding-right: 0px;
+    color: white;
 }
 
 .bill-table-header{
@@ -45,5 +96,41 @@ button{
 
 .lucho-panel > button {
     border-radius: 20px;
+    border:none;
 }
 
+button{
+    border: none;
+    color: white;
+    border-radius: 30px;
+}
+
+
+button.recargas{
+    background-color: #ea4b35;
+}
+
+button.facturas{
+    background-color: #c43926;
+}
+
+.list-group-recargas{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.modal-checkout{
+    overflow: visible;
+}
+
+.red{
+    background: #e8183b;
+}
+
+.bill-table-bottom > input{
+    border-radius: 30px;
+}
+
+.busqueda{
+    background-color: rgb(206, 206, 206)
+}

@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Lucho</title>
 </head>
-<body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Lucho</h5>
+<body id="body">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom shadow-sm row-nav"
+>
+      <h5 class="my-0 mr-md-auto font-weight-normal"><a href="index.html">Lucho</a></h5>
       <nav class="my-2 my-md-0 mr-md-3 ">
-        <a class="p-2 text-dark" href="#">Quienes Somos</a>
-        <a class="p-2 text-dark" href="productos.html">Productos</a>
-        <a class="p-2 text-dark" href="#">Preguntas Frecuentes</a>
-        <a class="p-2 text-dark" href="#">Contacto</a>
+        <a class="p-2" href="#">Quienes Somos</a>
+        <a class="p-2" href="productos.html">Productos</a>
+        <a class="p-2" href="#">Preguntas Frecuentes</a>
+        <a class="p-2" href="#">Contacto</a>
       </nav>
     </div>
 
-    <div class="container">
+
+    <div id="scene">
+      <div class="container">
+        <br>
         <div class="row">
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <img src="img/lucho-pancarta.png" alt="Lucho" class="img-fluid">
+            </div>
             <div class="col-md-4">
                 <br>           
                 <br>           
@@ -29,24 +35,39 @@
                 <br>           
                 <br>           
                   
-                          <div class="accordion" id="accordionExample">
+                          <div class="accordion buttons-group" id="accordionExample">
                                 <div>
                                 <h5 class="card-title text-center">QUE NECESITAS</h5>
                                   <div class="" id="headingOne">
                                     <h5 class="mb-0">
-                                      <button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <button class="btn btn-lg btn-block recargas" 
+                                      type="button" data-toggle="collapse" data-target="#collapseOne" 
+                                      aria-expanded="true" aria-controls="collapseOne">
                                         RECARGAS
                                       </button>
                                     </h5>
                                   </div>
-                              
+                               
                                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                            <form class="form-inline">
-                                                    <h6 class="text-center">CUANTO DESEA RECARGAR</h6>
-                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="$">
-                                                    <button type="submit" class="btn btn-primary mb-2">RECARGAR</button>
-                                            </form>
+                                    <div class="card-body" style="padding:0px">
+                                        <ul id="list-group-recargas1" class="list-group list-group-recargas" *ngIf="clicked">
+                                            <li class="list-group-item">Claro</li>
+                                            <li class="list-group-item">Movistar</li>
+                                            <li class="list-group-item">Tigo</li>
+                                            <li class="list-group-item">Avantel</li>
+                                            <li class="list-group-item">Uff</li>
+                                          </ul>
+
+                                        <form id="form-recarga-monto" class="form-inline" style="display:none;">
+                                          <br>
+  
+                                            <h6>
+                                              <i class="fas fa-chevron-left" 
+                                              onclick="backPay()"></i>&nbsp;
+                                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-center">CUANTO DESEA RECARGAR</span></h6>
+                                            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="$">
+                                            <button type="submit" class="btn btn-primary mb-2">RECARGAR</button>
+                                    </form>
                                     </div>
                                   </div>
                                 </div>
@@ -54,29 +75,66 @@
                                 <div class="">
                                   <div class="" id="headingTwo">
                                     <h5 class="mb-0">
-                                      <button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      <button class="btn btn-lg btn-block facturas" type="button" 
+                                      data-toggle="collapse" data-target="#collapseTwo" 
+                                      aria-expanded="false" aria-controls="collapseTwo">
                                         PAGO DE FACTURAS
                                       </button>
                                     </h5>
                                   </div>
                                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
+                                      <div class="card-body" style="padding:0px">
+                                          <ul id="list-group-recargas2" class="list-group list-group-recargas">
+                                              <li class="list-group-item">Claro</li>
+                                              <li class="list-group-item">Movistar</li>
+                                              <li class="list-group-item">Tigo</li>
+                                              <li class="list-group-item">Avantel</li>
+                                              <li class="list-group-item">Uff</li>
+                                            </ul>
+                                      </div>
                                   </div>
                                 </div>
                               </div>
+
             </div>
             <div class="col-md-4"></div>
         </div>
     </div>
+  </div>
+
+
 
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <script src="js/bootstrap.min.js"></script>    
+
+<script>
+    const backPay = () => {
+      $('#list-group-recargas1').css('display', 'inline');
+      $('#form-recarga-monto').css('display', 'none');
+    }
+
+    const payItem = () => {
+      
+    }
+
+
+  $(document).ready(()=>{
+
+    $('.list-group-recargas li').click((event)=>{
+      $('#list-group-recargas1').css('display', 'none');
+      $('#form-recarga-monto').css('display', 'inline');
+
+    })
+
+
+
+  })
+</script>
     
 </body>
 </html>

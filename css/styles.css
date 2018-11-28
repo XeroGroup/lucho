@@ -165,8 +165,13 @@ button.facturas{
     font-size: 1.3vw; 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)  {
     .lucho-text {
        font-size: 100%;
     }
   }
+
+@media only screen and (max-width: 992px){
+.container {
+    max-width: 95%;
+}
